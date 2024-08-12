@@ -12,6 +12,15 @@
 		AA61B5012C6A4C1C006E9724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA61B5002C6A4C1C006E9724 /* Assets.xcassets */; };
 		AA61B5042C6A4C1C006E9724 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA61B5032C6A4C1C006E9724 /* Preview Assets.xcassets */; };
 		AA61B51B2C6A5311006E9724 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AA61B51A2C6A5311006E9724 /* ComposableArchitecture */; };
+		AA61B5252C6A5354006E9724 /* VerifyCodeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B51C2C6A5354006E9724 /* VerifyCodeFeature.swift */; };
+		AA61B5272C6A5354006E9724 /* SingleDigitInputFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B51F2C6A5354006E9724 /* SingleDigitInputFeature.swift */; };
+		AA61B5292C6A5354006E9724 /* RegisterVerifyEmailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B5222C6A5354006E9724 /* RegisterVerifyEmailFeature.swift */; };
+		AA61B52D2C6A57A9006E9724 /* ErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B52C2C6A57A9006E9724 /* ErrorLogger.swift */; };
+		AA61B52F2C6A58A8006E9724 /* ConsoleErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B52E2C6A58A8006E9724 /* ConsoleErrorLogger.swift */; };
+		AA61B5312C6A58E3006E9724 /* ErrorLoggerKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B5302C6A58E3006E9724 /* ErrorLoggerKey.swift */; };
+		AA61B5342C6A5963006E9724 /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B5332C6A5963006E9724 /* AuthUseCase.swift */; };
+		AA61B5362C6A59D4006E9724 /* LiveAuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B5352C6A59D4006E9724 /* LiveAuthUseCase.swift */; };
+		AA61B5382C6A5A0D006E9724 /* AuthUseCaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B5372C6A5A0D006E9724 /* AuthUseCaseKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		AA61B4FE2C6A4C1B006E9724 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA61B5002C6A4C1C006E9724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA61B5032C6A4C1C006E9724 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA61B51C2C6A5354006E9724 /* VerifyCodeFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyCodeFeature.swift; sourceTree = "<group>"; };
+		AA61B51F2C6A5354006E9724 /* SingleDigitInputFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDigitInputFeature.swift; sourceTree = "<group>"; };
+		AA61B5222C6A5354006E9724 /* RegisterVerifyEmailFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVerifyEmailFeature.swift; sourceTree = "<group>"; };
+		AA61B52C2C6A57A9006E9724 /* ErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogger.swift; sourceTree = "<group>"; };
+		AA61B52E2C6A58A8006E9724 /* ConsoleErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleErrorLogger.swift; sourceTree = "<group>"; };
+		AA61B5302C6A58E3006E9724 /* ErrorLoggerKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLoggerKey.swift; sourceTree = "<group>"; };
+		AA61B5332C6A5963006E9724 /* AuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCase.swift; sourceTree = "<group>"; };
+		AA61B5352C6A59D4006E9724 /* LiveAuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAuthUseCase.swift; sourceTree = "<group>"; };
+		AA61B5372C6A5A0D006E9724 /* AuthUseCaseKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCaseKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +74,12 @@
 				AA61B4FE2C6A4C1B006E9724 /* ContentView.swift */,
 				AA61B4FC2C6A4C1B006E9724 /* TCASharedTestingIssueApp.swift */,
 				AA61B5002C6A4C1C006E9724 /* Assets.xcassets */,
+				AA61B5322C6A5924006E9724 /* Auth */,
+				AA61B52B2C6A5798006E9724 /* ErrorLogger */,
 				AA61B5022C6A4C1C006E9724 /* Preview Content */,
+				AA61B5242C6A5354006E9724 /* RegisterVerifyEmail */,
+				AA61B5212C6A5354006E9724 /* SingleDigitInput */,
+				AA61B51E2C6A5354006E9724 /* VerifyCode */,
 			);
 			path = TCASharedTestingIssue;
 			sourceTree = "<group>";
@@ -67,6 +90,50 @@
 				AA61B5032C6A4C1C006E9724 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA61B51E2C6A5354006E9724 /* VerifyCode */ = {
+			isa = PBXGroup;
+			children = (
+				AA61B51C2C6A5354006E9724 /* VerifyCodeFeature.swift */,
+			);
+			path = VerifyCode;
+			sourceTree = "<group>";
+		};
+		AA61B5212C6A5354006E9724 /* SingleDigitInput */ = {
+			isa = PBXGroup;
+			children = (
+				AA61B51F2C6A5354006E9724 /* SingleDigitInputFeature.swift */,
+			);
+			path = SingleDigitInput;
+			sourceTree = "<group>";
+		};
+		AA61B5242C6A5354006E9724 /* RegisterVerifyEmail */ = {
+			isa = PBXGroup;
+			children = (
+				AA61B5222C6A5354006E9724 /* RegisterVerifyEmailFeature.swift */,
+			);
+			path = RegisterVerifyEmail;
+			sourceTree = "<group>";
+		};
+		AA61B52B2C6A5798006E9724 /* ErrorLogger */ = {
+			isa = PBXGroup;
+			children = (
+				AA61B52E2C6A58A8006E9724 /* ConsoleErrorLogger.swift */,
+				AA61B52C2C6A57A9006E9724 /* ErrorLogger.swift */,
+				AA61B5302C6A58E3006E9724 /* ErrorLoggerKey.swift */,
+			);
+			path = ErrorLogger;
+			sourceTree = "<group>";
+		};
+		AA61B5322C6A5924006E9724 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AA61B5332C6A5963006E9724 /* AuthUseCase.swift */,
+				AA61B5372C6A5A0D006E9724 /* AuthUseCaseKey.swift */,
+				AA61B5352C6A59D4006E9724 /* LiveAuthUseCase.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA61B52D2C6A57A9006E9724 /* ErrorLogger.swift in Sources */,
+				AA61B5362C6A59D4006E9724 /* LiveAuthUseCase.swift in Sources */,
 				AA61B4FF2C6A4C1B006E9724 /* ContentView.swift in Sources */,
+				AA61B5312C6A58E3006E9724 /* ErrorLoggerKey.swift in Sources */,
+				AA61B5292C6A5354006E9724 /* RegisterVerifyEmailFeature.swift in Sources */,
+				AA61B5342C6A5963006E9724 /* AuthUseCase.swift in Sources */,
 				AA61B4FD2C6A4C1B006E9724 /* TCASharedTestingIssueApp.swift in Sources */,
+				AA61B5252C6A5354006E9724 /* VerifyCodeFeature.swift in Sources */,
+				AA61B5382C6A5A0D006E9724 /* AuthUseCaseKey.swift in Sources */,
+				AA61B5272C6A5354006E9724 /* SingleDigitInputFeature.swift in Sources */,
+				AA61B52F2C6A58A8006E9724 /* ConsoleErrorLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +363,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +392,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
