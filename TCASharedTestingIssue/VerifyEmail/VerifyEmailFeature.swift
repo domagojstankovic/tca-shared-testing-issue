@@ -1,5 +1,5 @@
 //
-//  RegisterVerifyEmailFeature.swift
+//  VerifyEmailFeature.swift
 //  Presentation
 //
 //  Created by Domagoj Stankovic on 15.07.2024..
@@ -8,7 +8,7 @@
 import ComposableArchitecture
 
 @Reducer
-struct RegisterVerifyEmailFeature: Sendable {
+struct VerifyEmailFeature: Sendable {
     init() {
     }
 
@@ -71,7 +71,7 @@ struct RegisterVerifyEmailFeature: Sendable {
     }
 }
 
-extension RegisterVerifyEmailFeature {
+extension VerifyEmailFeature {
     enum Delegate: Sendable {
         case verified
     }

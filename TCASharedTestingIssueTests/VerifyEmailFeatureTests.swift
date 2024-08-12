@@ -1,5 +1,5 @@
 //
-//  TCASharedTestingIssueTests.swift
+//  VerifyEmailFeatureTests.swift
 //  TCASharedTestingIssueTests
 //
 //  Created by Domagoj Stankovic on 12.08.2024..
@@ -9,13 +9,13 @@ import XCTest
 import ComposableArchitecture
 @testable import TCASharedTestingIssue
 
-final class TCASharedTestingIssueTests: XCTestCase {
+final class VerifyEmailFeatureTests: XCTestCase {
     @MainActor
     func testError() async {
         let errorLogger = TestErrorLogger()
 
-        let store = TestStore(initialState: RegisterVerifyEmailFeature.State(email: "info@underflow.eu")) {
-            RegisterVerifyEmailFeature()
+        let store = TestStore(initialState: VerifyEmailFeature.State(email: "info@underflow.eu")) {
+            VerifyEmailFeature()
         } withDependencies: {
             $0.authUseCase = TestAuthUseCase(
                 verificationCodeResult: .success("583726")
