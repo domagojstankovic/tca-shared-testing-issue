@@ -79,12 +79,12 @@ final class TCASharedTestingIssueTests: XCTestCase {
 
         await store.receive(\.verifyCode.digits[id: 5].delegate, .didUpdate("6")) {
             $0.verifyCode.focusedIndex = nil
-            $0.isError = true
         }
 
         await store.receive(\.verifyCode.delegate, .codeEntered("123456"))
 
         await store.receive(\.error) {
+            $0.isError = true
             $0.testFlag = true
         }
     }
