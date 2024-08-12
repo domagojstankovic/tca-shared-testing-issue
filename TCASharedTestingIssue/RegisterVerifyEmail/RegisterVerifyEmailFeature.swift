@@ -16,12 +16,14 @@ struct RegisterVerifyEmailFeature: Sendable {
     struct State: Equatable, Sendable {
         let email: String
         @Shared var isError: Bool
+        var testFlag: Bool
         var verifyCode: VerifyCodeFeature.State
 
         init(email: String) {
             self.email = email
             let isError = Shared(false)
             self._isError = isError
+            self.testFlag = false
             self.verifyCode = VerifyCodeFeature.State(count: 6, isError: isError)
         }
     }
@@ -47,6 +49,7 @@ struct RegisterVerifyEmailFeature: Sendable {
 
             case .error:
                 state.isError = true
+                state.testFlag = true
                 return .none
 
             case let .verifyCode(.delegate(.codeEntered(code))):

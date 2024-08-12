@@ -22,6 +22,9 @@
 		AA61B5362C6A59D4006E9724 /* LiveAuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B5352C6A59D4006E9724 /* LiveAuthUseCase.swift */; };
 		AA61B5382C6A5A0D006E9724 /* AuthUseCaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B5372C6A5A0D006E9724 /* AuthUseCaseKey.swift */; };
 		AA61B5402C6A5B66006E9724 /* TCASharedTestingIssueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B53F2C6A5B66006E9724 /* TCASharedTestingIssueTests.swift */; };
+		AA61B5472C6A5BB7006E9724 /* TestAuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B5462C6A5BB7006E9724 /* TestAuthUseCase.swift */; };
+		AA61B5492C6A5C07006E9724 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B5482C6A5C07006E9724 /* TestError.swift */; };
+		AA61B54B2C6A5CFF006E9724 /* TestErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA61B54A2C6A5CFF006E9724 /* TestErrorLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		AA61B5372C6A5A0D006E9724 /* AuthUseCaseKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCaseKey.swift; sourceTree = "<group>"; };
 		AA61B53D2C6A5B66006E9724 /* TCASharedTestingIssueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCASharedTestingIssueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA61B53F2C6A5B66006E9724 /* TCASharedTestingIssueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCASharedTestingIssueTests.swift; sourceTree = "<group>"; };
+		AA61B5462C6A5BB7006E9724 /* TestAuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAuthUseCase.swift; sourceTree = "<group>"; };
+		AA61B5482C6A5C07006E9724 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		AA61B54A2C6A5CFF006E9724 /* TestErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestErrorLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				AA61B53F2C6A5B66006E9724 /* TCASharedTestingIssueTests.swift */,
+				AA61B5462C6A5BB7006E9724 /* TestAuthUseCase.swift */,
+				AA61B5482C6A5C07006E9724 /* TestError.swift */,
+				AA61B54A2C6A5CFF006E9724 /* TestErrorLogger.swift */,
 			);
 			path = TCASharedTestingIssueTests;
 			sourceTree = "<group>";
@@ -290,7 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA61B5492C6A5C07006E9724 /* TestError.swift in Sources */,
 				AA61B5402C6A5B66006E9724 /* TCASharedTestingIssueTests.swift in Sources */,
+				AA61B54B2C6A5CFF006E9724 /* TestErrorLogger.swift in Sources */,
+				AA61B5472C6A5BB7006E9724 /* TestAuthUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
